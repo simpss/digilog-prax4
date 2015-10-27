@@ -14,5 +14,5 @@ architecture mixed of func_three is
 variable temp : std_logic_vector( 3 downto 0 );
 
 begin --beginning of the architecture
-    o <= a(2) & a(1) & a(0) & '0';
+    o <= not a;
 end mixed;
