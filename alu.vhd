@@ -31,7 +31,7 @@ signal f1, f2, f3, f4 : STD_LOGIC_VECTOR (3 downto 0);
 
 begin --beginning of the architecture
 	--f1 <= "0001";
-	f2 <= "0010";
+	--f2 <= "0010";
 	f3 <= "0100";
 	f4 <= "1000";
 	
@@ -39,6 +39,12 @@ begin --beginning of the architecture
 		a => a,
 		b => b,
 		o => f1
+	);
+	
+	func_2 : func_one port map(
+		a => a,
+		b => b,
+		o => f2
 	);
 	
 	mux_1 : MUX port map(
