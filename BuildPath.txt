@@ -67,4 +67,4 @@
 # toplevel WORK.LEON3MP(RTL)
 # toplevel LEON3S
 
-
+toplevel FUNCONETESTBENCH
