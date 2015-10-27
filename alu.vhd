@@ -41,9 +41,8 @@ begin --beginning of the architecture
 		o => f1
 	);
 	
-	func_2 : func_one port map(
+	func_2 : func_two port map(
 		a => a,
-		b => b,
 		o => f2
 	);
 	
