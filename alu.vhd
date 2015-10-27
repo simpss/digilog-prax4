@@ -37,4 +37,5 @@ begin --beginning of the architecture
 		op=> op,
 		o=> o
 	);
+	
 end mixed;
