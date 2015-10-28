@@ -1,4 +1,4 @@
--- func_three.vhdl created on 1:16  2015.9.28
+-- func_four.vhdl created on 1:16  2015.9.28
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
