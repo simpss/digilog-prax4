@@ -35,9 +35,17 @@ begin
 	--write your testbench behaviour here
 	Stimulus: process
 	   begin
-	      a_tb <= "0100" after 0ns, "0001" after 40ns, "0000" after 80ns;
-	      b_tb <= "0001" after 0ns, "0000" after 40ns, "0000" after 80ns;
-	      op_tb <= "00" after 0ns, "01" after 20ns, "10" after 40ns, "11" after 60ns, "00" after 80ns;
+	      a_tb <= "0000" after 0ns, "0001" after 5ns, 
+	              "0000" after 10ns, "0001" after 15ns, 
+	              "0000" after 20ns, "0101" after 25ns,
+	              "0000" after 30ns, "1010" after 35ns,
+	              "UUUU" after 40ns;
+	      b_tb <= "0000" after 0ns, "0001" after 5ns, 
+	              "UUUU" after 10ns, "UUUU" after 15ns, --b is not used
+	              "UUUU" after 20ns, "UUUU" after 25ns, --b is not used
+	              "0000" after 30ns, "0101" after 35ns,
+	              "UUUU" after 40ns;
+	      op_tb <= "00" after 0ns, "01" after 10ns, "10" after 20ns, "11" after 30ns, "UU" after 40ns;
 	      
 	   wait;  --Suspend
 	end process Stimulus;

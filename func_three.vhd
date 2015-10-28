@@ -11,7 +11,6 @@ end func_three;
 architecture mixed of func_three is
 
 --declare components and inner signals here if needed
-variable temp : std_logic_vector( 3 downto 0 );
 
 begin --beginning of the architecture
     o <= not a;
